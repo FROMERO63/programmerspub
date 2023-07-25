@@ -1,0 +1,24 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: black;
+    color: bisque;
+}
+
+
+#bartender {
+    z-index: auto;
+    position: relative;
+}
+
+.bottle {
+    display: flex;
+    align-items: row;
+
+}
+
+.bottleImage {
+    display: flex;
+    justify-content: space-between;
+    max-height: 200px;
+    max-width: auto;
+}
