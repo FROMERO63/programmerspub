@@ -1,9 +1,13 @@
 *{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: black;
-    color: bisque;
+    background-color: var(--background-color);
+    color: var(--header-color);
 }
 
+:root{
+    --background-color:black;
+    --header-color: bisque;
+}
 
 #bartender {
     z-index: auto;
@@ -14,6 +18,22 @@
     display: flex;
     align-items: row;
 
+}
+
+#contactInfo {
+    color: var(--header-color)!important;
+}
+
+#aboutUs {
+    color: var(--header-color)!important;
+}
+
+#drinkRecipe {
+    color: var(--header-color)!important;
+}
+
+#navBarText {
+    color: var(--header-color)!important;
 }
 
 .bottleImage {
