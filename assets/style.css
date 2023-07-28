@@ -1,9 +1,13 @@
 *{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: black;
-    color: bisque;
+    background-color: var(--background-color);
+    color: var(--header-color);
 }
 
+:root{
+    --background-color:black;
+    --header-color: bisque;
+}
 
 #bartender {
     z-index: auto;
@@ -16,9 +20,39 @@
 
 }
 
-.bottleImage {
+#contactInfo {
+    color: var(--header-color)!important;
+}
+
+#aboutUs {
+    color: var(--header-color)!important;
+}
+
+#drinkRecipe {
+    color: var(--header-color)!important;
+}
+
+#navBarText {
+    color: var(--header-color)!important;
+}
+
+.row {
     display: flex;
-    justify-content: space-between;
-    max-height: 200px;
+    padding: 5px;
+}
+
+.bottleImage{
+    max-height: 180px;
     max-width: auto;
+}
+
+#randomContainer {
+    background-color: white;
+    color: black;
+    display: flex;
+    max-width: 200px;
+    height: 200px;
+    font-size: 20px;
+    border-radius: 25%;
+    float: left;
 }
