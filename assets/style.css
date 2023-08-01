@@ -20,6 +20,7 @@
 
 }
 
+
 #navbarItemsContainer{
     background-color: var(--background-color)!important;
     display: flex;
@@ -28,6 +29,7 @@
 
 #navbarMenu{
     background-color: var(--background-color)!important;
+
     display: flex;
     justify-content: space-between;
 }
