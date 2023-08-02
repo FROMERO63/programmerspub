@@ -1,0 +1,45 @@
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color:rgb(218, 218, 134);
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: black;
+  color: yellow;;
+  text-align: center;
+  padding: 20px;
+}
+
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header button {
+  padding: 20px 30px;
+  background-color: brown;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+.drink-info span#drinkThumbnailText {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  font-size: 1rem;
+  color: #871c1c;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 5px;
+  border-radius: 5px;
+}
+
