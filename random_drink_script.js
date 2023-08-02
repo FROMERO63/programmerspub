@@ -25,5 +25,9 @@ button.addEventListener("click", function () {
         ", " +
         data.drinks[0].strIngredient3;
       document.getElementById("img").src = thumbNail;
+
+      thumbNail.style.width = "333px";
+      thumbNail.style.width = "233px";
+      thumbNail.style.borderRadius = "10px";
     });
 });
