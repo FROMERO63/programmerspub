@@ -1,6 +1,6 @@
 :root {
-  --bg: #071e36;
-  --card-bg: #041221;
+  --bg: black;
+  --card-bg: black;
 }
 
 body {
@@ -22,7 +22,7 @@ input::placeholder {
 }
 
 .navbar-item {
-  color: ghostwhite;
+  color: bisque;
 }
 
 /* Card start*/
