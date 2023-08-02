@@ -1,0 +1,212 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--header-color);
+}
+
+:root{
+    --background-color:black;
+    --header-color: bisque;
+}
+
+#bartender {
+    z-index: auto;
+    position: relative;
+}
+
+.bottle {
+    display: flex;
+    align-items: row;
+
+}
+
+
+#navbarItemsContainer{
+    background-color: var(--background-color)!important;
+    display: flex;
+    justify-content: space-between;
+}
+
+#navbarMenu{
+    background-color: var(--background-color)!important;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#contactInfo {
+    color: var(--header-color)!important;
+}
+
+#aboutUs {
+    color: var(--header-color)!important;
+}
+
+#drinkRecipe {
+    color: var(--header-color)!important;
+}
+
+#navBarText {
+    color: var(--header-color)!important;
+    font-size: 40px;
+}
+
+.row {
+    display: block;
+    padding: 5px;
+}
+
+.rowOne{
+    width: 25%;
+    padding-left: 60px;
+    background-color: white;
+}
+
+.bottleImage{
+    max-height: 180px;
+    max-width: auto;
+    background: transparent;
+}
+.randomDrinkContainer{
+    position: absolute;
+    background: transparent;
+    top: 100px; left: 230px;
+}
+
+.totalBar{
+    display: inline-block;
+}
+
+#bottleContainer{
+    display: flex;
+    align-items: center;
+    background: transparent;
+
+}
+
+
+#randomDrink {
+    background-color: white;
+    color: black;
+    display: flex;
+    max-width: 200px;
+    height: 180px;
+    font-size: 20px;
+    border-radius: 25%;
+    float: left;
+    padding: 20px;
+    z-index: 5;
+    text-align: center;
+}
+
+#titleText{
+    text-align: center;
+    color: var(--header-color);
+}
+#subtitleText{
+    color: var(--header-color);
+}
+
+#aboutUs{
+    text-align: center;
+}
+
+#aboutUsText{
+    color: var(--header-color);
+    background-color: black;
+}
+
+#contactUs{
+    color: var(--header-color);
+    background-color: black;
+}
+
+#footerText{
+    color: var(--header-color);
+    font-size: 20px;
+    padding-left: 55px;
+}
+
+#phone{
+    color: var(--header-color);
+    font-size: 15px;
+    padding-left: 200px;
+}
+
+#instagram{
+    color: var(--header-color);
+    font-size: 15px;
+    padding-left: 100px;
+}
+
+#instagram:hover{
+    color: var(--header-color);
+    background-color: black;
+    font-size: 16px;
+}
+
+#email{
+    color: var(--header-color);
+    background-color: black;
+    font-size: 15px;
+    padding-left: 100px;
+}
+
+#email:hover{
+    color: var(--header-color);
+    background-color: black;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 900px) {
+    #navbarItemsContainer{
+        background-color: var(--background-color)!important;
+        display: inline-block;
+    }
+    #randomDrink {
+        background-color: white;
+        color: black;
+        display: flex;
+        max-width: 150px;
+        height: 120px;
+        font-size: 13px;
+        border-radius: 25%;
+        float: left;
+        padding: 20px;
+        z-index: 5;
+        text-align: center;
+    }
+    .randomDrinkContainer{
+        position: absolute;
+        background: transparent;
+        top: 180px; left: 140px;
+    }
+    
+    }
+
+
+    @media screen and (max-width: 600px) {
+        #navbarItemsContainer{
+            background-color: var(--background-color)!important;
+            display: inline-block;
+        }
+        #randomDrink {
+            background-color: white;
+            color: black;
+            display: flex;
+            max-width: 100px;
+            height: 110px;
+            font-size: 10px;
+            border-radius: 25%;
+            float: left;
+            padding: 20px;
+            z-index: 5;
+            text-align: center;
+        }
+        .randomDrinkContainer{
+            position: absolute;
+            background: transparent;
+            top: 180px; left: 100px;
+        }
+        
+        }
