@@ -9,10 +9,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <script src="https://kit.fontawesome.com/655dd4ab40.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/style.css" />
- main
 </head>
 
-<body onload="loadthedata()">
+<body>
 
     <header>
 
@@ -30,7 +29,7 @@
             <div ID="navbarItemsContainer">
 
                 <div class="navbar-item">
-                    <a href="to sections in the footers" id="drinkRecipe">DRINK RECIPES</a>
+                    <a href="./templates/Tequila.html" id="drinkRecipe">DRINK RECIPES</a>
                 </div>
                 <div class="navbar-item">
                     <a href="#aboutUs" id="aboutUs">ABOUT US</a>
@@ -38,6 +37,20 @@
                 <div class="navbar-item">
                     <a href="#contactUs" id="contactInfo">CONTACT INFO</a>
                 </div>
+
+            </div>
+
+            </P>
+            <div id="seachBar" class="navbar-item">
+                <input class="input is-primary is-small has-icons-left" type="text" placeholder="Search Drink">
+                <span class="icon is-small is-left">
+                    <i class="fa-solid fa-martini-glass-citrus"></i>
+                </span>
+                <div class="control">
+                    <a class="button is-info is-small">
+                      Search
+                    </a>
+                  </div>
             </div>
         </nav>
 
@@ -53,29 +66,6 @@
                 <div id="randomDrink" href="add link to random drink here">Would you like me to recomend a random drink? *click here*
                 </div>
             </div>
-            <section>
-                <div class="lidiWrap">Give your bartender some feeback! Likes are virtual tips!
-                    <button class="lidiUp" onclick="savelike()">Like
-                        <i class="fa-regular fa-thumbs-up"></i>
-                        <div class="likeCounter" id="likeOne"></div>
-                    </button>
-                    <button class="lidiDown" onclick="savedislike()">Dislike
-                        <i class="fa-regular fa-thumbs-down"></i>
-                        <div class="dislikeCounter" id="likeTwo"></div>
-                    </button>
-                </div>
-                <section>
-                    <div class="lidiWrap">See how your bartender did with their last customer
-                        <button class="lidiUp">Like
-                            <i class="fa-regular fa-thumbs-up"></i>
-                            <div class="likeCounter" id="likeThree"></div>
-                        </button>
-                        <button class="lidiDown">Dislike
-                            <i class="fa-regular fa-thumbs-down"></i>
-                            <div class="dislikeCounter" id="likeFour"></div>
-                        </button>
-                    </div>
-            </section>
             <div class="alcoholChoiceContainer">
                 <div class="title is-2" id="titleText">SELECT YOUR FAVORITE ALCOHOL BELOW
                     <p class="subtitle is-8" id="subtitleText">To see a list of specialty drinks containing that alcohol
@@ -85,16 +75,16 @@
             </div>
             <div class="row" id="bottleContainer">
                 <div class="rowOne">
-                    <img class="bottleImage" id="tequila" src="./assets/Tequila"/>
+                    <a href="templates/Tequila.html"> <img src="./assets/Tequila">
                 </div>
                 <div class="rowOne">
-                    <img class="bottleImage" id="vodka" src="./assets/vodka"/>
+                    <a href="templates/Vodka.html"> <img src="./assets/vodka">
                 </div>
                 <div class="rowOne">
-                    <img class="bottleImage" id="whiskey" src="./assets/whiskey"/>
+                    <a href="templates/Whiskey.html"> <img src="./assets/whiskey">
                 </div>
                 <div class="rowOne">
-                    <img class="bottleImage" id="rum" src="./assets/rum"/>
+                    <a href="templates/Rum.html"> <img src="./assets/rum">
                 </div>
               </div>
         </section>
@@ -104,6 +94,7 @@
     </section>
 
     <footer id="contactUs">
+        <!--add fake links here-->
         <div class="navbar-start">
             <div class="navbar-item" id="footerText">
                 CONTACT INFO
@@ -124,4 +115,4 @@
 </body>
 
 </html>
-main
+
