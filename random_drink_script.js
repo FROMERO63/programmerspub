@@ -1,7 +1,7 @@
 const button = document.getElementById("button");
 
 button.addEventListener("click", function () {
-  var urlRequest = "https://www.thecocktaildb.com/api/json/v1/1/random.php";
+  var urlRequest = "https://www.thecocktaildb.com/api/json/v2/9973533/random.php";
 
   fetch(urlRequest)
     .then(function (response) {
