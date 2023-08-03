@@ -13,9 +13,9 @@ fetch(urlRequest)
 
     nameCell.textContent = data.drinks[15].strDrink;
     img.src = data.drinks[15].strDrinkThumb;
-    img.style.width = "333px";
+    img.style.width = "400px";
     img.style.height = "233px";
-    img.style.borderRadius = "10px";
+
     /*-------------------------------------------------------------*/
 
     const namecell2 = document.getElementById("drinkName2");
@@ -24,9 +24,9 @@ fetch(urlRequest)
 
     namecell2.textContent = data.drinks[6].strDrink;
     img2.src = data.drinks[6].strDrinkThumb;
-    img2.style.width = "333px";
+    img2.style.width = "400px";
     img2.style.height = "233px";
-    img2.style.borderRadius = "10px";
+
     /*------------------------------------------------------------*/
     const namecell3 = document.getElementById("drinkName3");
 
@@ -34,9 +34,8 @@ fetch(urlRequest)
 
     namecell3.textContent = data.drinks[23].strDrink;
     img3.src = data.drinks[23].strDrinkThumb;
-    img3.style.width = "333px";
+    img3.style.width = "400px";
     img3.style.height = "233px";
-    img3.style.borderRadius = "10px";
 
     const namecell4 = document.getElementById("drinkName4");
 
@@ -44,9 +43,9 @@ fetch(urlRequest)
 
     namecell4.textContent = data.drinks[2].strDrink;
     img4.src = data.drinks[2].strDrinkThumb;
-    img4.style.width = "333px";
+    img4.style.width = "400px";
     img4.style.height = "233px";
-    img4.style.borderRadius = "10px";
+
     4;
   });
 const secUrlRequest =
