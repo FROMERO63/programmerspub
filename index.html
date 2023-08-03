@@ -37,20 +37,6 @@
                 <div class="navbar-item">
                     <a href="#contactUs" id="contactInfo">CONTACT INFO</a>
                 </div>
-
-            </div>
-
-            </P>
-            <div id="seachBar" class="navbar-item">
-                <input class="input is-primary is-small has-icons-left" type="text" placeholder="Search Drink">
-                <span class="icon is-small is-left">
-                    <i class="fa-solid fa-martini-glass-citrus"></i>
-                </span>
-                <div class="control">
-                    <a class="button is-info is-small">
-                      Search
-                    </a>
-                  </div>
             </div>
         </nav>
 
@@ -61,10 +47,11 @@
             <div id="bar" class="barContainer">
                 <img id="bartender"src="./assets/bar.png"/>
             </div>
+            </section>
             <div id="randomContainer" class="randomDrinkContainer">
                 <!--add in link to random drink here-->
-                <div id="randomDrink" href="add link to random drink here">Would you like me to recomend a random drink? *click here*
-                </div>
+                <a id="randomDrink" href="./assets/random.html">Would you like me to recomend a random drink? *click here*
+                </a>
             </div>
             <div class="alcoholChoiceContainer">
                 <div class="title is-2" id="titleText">SELECT YOUR FAVORITE ALCOHOL BELOW
@@ -86,17 +73,17 @@
                 <div class="rowOne">
                     <a href="templates/Rum.html"> <img src="./assets/rum">
                 </div>
-              </div>
+            </div>
         </section>
 
     <section id="aboutUs" class="title is-2">ABOUT US
         <p class="subtitle is-8" id="aboutUsText"> We are a group of coding students that like to enjoy a drink or two. After a long day of coding, you may be tired and looking for something to take the edge off. We are offering a site to help you choose a cocktail that you can make in the confort of your home. Our resident bartender can recommend a random drink for you. Or if you are looking for a more specific drink recommendation based off your favorite liquor tpe, you can click on bottles below for some popular drinks. </p>
     </section>
-    <section>
-    </script>
-    <div id="player"></div>
+    <section id="videoContainer">
+        </script>
+        <div id="player"></div>
 
-    <script>
+        <script>
       // 2. This code loads the IFrame Player API code asynchronously.
       var tag = document.createElement("script");
 
@@ -138,7 +125,7 @@
       function stopVideo() {
         player.stopVideo();
       }
-    </script>
+        </script>
     </section>
   
     <footer id="contactUs">
