@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color:rgb(218, 218, 134);
+  background-color:bisque;
   color: #333;
   margin: 0;
   padding: 0;
@@ -10,12 +10,15 @@ body {
  
  header {
   background-color: black;
-  color: yellow;;
+  color: bisque;
   text-align: center;
   padding: 20px;
  }
  
- 
+ #button{
+  background-color: bisque;
+  color: black;
+ }
  
  
  header h1 {
@@ -34,7 +37,10 @@ body {
  }
  
  
- 
+ #homeBtn {
+  background-color: bisque;
+  color: black;
+ }
  
  
  
@@ -48,4 +54,42 @@ body {
   padding: 5px;
   border-radius: 5px;
  }
+
+ .lidiWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: bisque;
+  color: black;
+  padding: 10px;
+}
+
+.lidiUp {
+  width: 70px;
+  height: 35px;
+  text-align: center;
+  border-radius: 10%;
+  font-size: 10px;
+  margin: 2px;
+  cursor: pointer;
+  padding: 2px;
+}
+
+.lidiDown {
+  width: 70px;
+  height: 35px;
+  text-align: center;
+  border-radius: 10%;
+  font-size: 10px;
+  cursor: pointer;
+  padding: 2px;
+}
+
+.lidiUp:hover {
+  font-size: 11px;
+}
+
+.lidiDown:hover {
+  font-size: 11px;
+}
  
