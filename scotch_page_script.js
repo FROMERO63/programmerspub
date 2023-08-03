@@ -1,5 +1,5 @@
 const urlRequest =
-  "https://www.thecocktaildb.com/api/json/v2/9973533/filter.php?i=bourbon";
+  "https://www.thecocktaildb.com/api/json/v2/9973533/filter.php?i=scotch";
 
 fetch(urlRequest)
   .then(function (response) {
@@ -11,11 +11,11 @@ fetch(urlRequest)
     const nameCell = document.getElementById("drinkName");
     const img = document.getElementById("img");
 
-    nameCell.textContent = data.drinks[0].strDrink;
-    img.src = data.drinks[0].strDrinkThumb;
-    img.style.width = "333px";
+    nameCell.textContent = data.drinks[6].strDrink;
+    img.src = data.drinks[6].strDrinkThumb;
+    img.style.width = "400px";
     img.style.height = "233px";
-    img.style.borderRadius = "10px";
+    img.style.borderRadius = "5px";
     /*--------------------------------------------  */
     const namecell2 = document.getElementById("drinkName2");
 
@@ -23,8 +23,8 @@ fetch(urlRequest)
 
     namecell2.textContent = data.drinks[7].strDrink;
     img2.src = data.drinks[7].strDrinkThumb;
-    img2.style.width = "100px";
-    img2.style.height = "100px";
+    img2.style.width = "400px";
+    img2.style.height = "233px";
 
     /* ------------------------------------------ */
     const nameCell3 = document.getElementById("drinkName3");
@@ -33,8 +33,8 @@ fetch(urlRequest)
     nameCell3.textContent = data.drinks[10].strDrink;
 
     img3.src = data.drinks[10].strDrinkThumb;
-    img3.style.width = "100px";
-    img3.style.height = "100px";
+    img3.style.width = "400px";
+    img3.style.height = "233px";
 
     /*----------------------------------------------*/
     const nameCell4 = document.getElementById("drinkName4");
@@ -43,11 +43,11 @@ fetch(urlRequest)
     nameCell4.textContent = data.drinks[2].strDrink;
 
     img4.src = data.drinks[2].strDrinkThumb;
-    img4.style.width = "100px";
-    img4.style.height = "100px";
+    img4.style.width = "400px";
+    img4.style.height = "233px";
   });
 const secUrlRequest =
-  "https://www.thecocktaildb.com/api/json/v2/1/lookup.php?i=11021";
+  "https://www.thecocktaildb.com/api/json/v2/1/lookup.php?i=11423";
 
 fetch(secUrlRequest)
   .then(function (response) {
@@ -62,15 +62,9 @@ fetch(secUrlRequest)
 
     const meas1 = document.getElementById("meas1_1");
     const meas2 = document.getElementById("meas2_1");
-    const meas3 = document.getElementById("meas3_1");
-    const meas4 = document.getElementById("meas4_1");
-    const meas5 = document.getElementById("meas5_1");
 
     meas1.textContent = data.drinks[0].strMeasure1;
     meas2.textContent = data.drinks[0].strMeasure2;
-    meas3.textContent = data.drinks[0].strMeasure3;
-    meas4.textContent = data.drinks[0].strMeasure4;
-    meas5.textContent = data.drinks[0].strMeasure5;
 
     ingredient1.textContent = data.drinks[0].strIngredient1;
     ingredient2.textContent = data.drinks[0].strIngredient2;
@@ -79,7 +73,7 @@ fetch(secUrlRequest)
   });
 /*----------------------------------------------*/
 const thirdUrlRequest =
-  "https://www.thecocktaildb.com/api/json/v2/1/lookup.php?i=11580";
+  "https://www.thecocktaildb.com/api/json/v2/1/lookup.php?i=11476";
 fetch(thirdUrlRequest)
   .then(function (response) {
     return response.json();
@@ -97,13 +91,11 @@ fetch(thirdUrlRequest)
     const meas2 = document.getElementById("meas2_2");
     const meas3 = document.getElementById("meas3_2");
     const meas4 = document.getElementById("meas4_2");
-    const meas5 = document.getElementById("meas5_2");
 
     meas1.textContent = data.drinks[0].strMeasure1;
     meas2.textContent = data.drinks[0].strMeasure2;
     meas3.textContent = data.drinks[0].strMeasure3;
     meas4.textContent = data.drinks[0].strMeasure4;
-    meas5.textContent = data.drinks[0].strMeasure5;
 
     ingredient1.textContent = data.drinks[0].strIngredient1;
     ingredient2.textContent = data.drinks[0].strIngredient2;
@@ -113,7 +105,7 @@ fetch(thirdUrlRequest)
   });
 /*--------------------------------------------*/
 const fourthUrlRequest =
-  "https://www.thecocktaildb.com/api/json/v2/1/lookup.php?i=11008";
+  "https://www.thecocktaildb.com/api/json/v2/1/lookup.php?i=12101";
 
 fetch(fourthUrlRequest)
   .then(function (response) {
@@ -134,19 +126,11 @@ fetch(fourthUrlRequest)
     const meas2 = document.getElementById("meas2_3");
     const meas3 = document.getElementById("meas3_3");
     const meas4 = document.getElementById("meas4_3");
-    const meas5 = document.getElementById("meas5_3");
-    const meas6 = document.getElementById("meas5_3");
-    const meas7 = document.getElementById("meas5_3");
-    const meas8 = document.getElementById("meas5_3");
 
     meas1.textContent = data.drinks[0].strMeasure1;
     meas2.textContent = data.drinks[0].strMeasure2;
     meas3.textContent = data.drinks[0].strMeasure3;
     meas4.textContent = data.drinks[0].strMeasure4;
-    meas5.textContent = data.drinks[0].strMeasure5;
-    meas6.textContent = data.drinks[0].strMeasure6;
-    meas7.textContent = data.drinks[0].strMeasure7;
-    meas8.textContent = data.drinks[0].strMeasure8;
 
     ingredient1.textContent = data.drinks[0].strIngredient1;
     ingredient2.textContent = data.drinks[0].strIngredient2;
@@ -159,7 +143,7 @@ fetch(fourthUrlRequest)
   });
 
 const fifthUrlRequest =
-  "https://www.thecocktaildb.com/api/json/v2/1/lookup.php?i=11147";
+  "https://www.thecocktaildb.com/api/json/v2/1/lookup.php?i=11121";
 
 fetch(fifthUrlRequest)
   .then(function (response) {
@@ -170,18 +154,20 @@ fetch(fifthUrlRequest)
     const ingredient1 = document.getElementById("ingredient1_4");
     const ingredient2 = document.getElementById("ingredient2_4");
     const ingredient3 = document.getElementById("ingredient3_4");
+    const ingredient4 = document.getElementById("ingredient4_4");
 
     const meas1 = document.getElementById("meas1_4");
     const meas2 = document.getElementById("meas2_4");
     const meas3 = document.getElementById("meas3_4");
     const meas4 = document.getElementById("meas4_4");
-    const meas5 = document.getElementById("meas5_4");
 
     meas1.textContent = data.drinks[0].strMeasure1;
     meas2.textContent = data.drinks[0].strMeasure2;
     meas3.textContent = data.drinks[0].strMeasure3;
+    meas4.textContent = data.drinks[0].strMeasure4;
 
     ingredient1.textContent = data.drinks[0].strIngredient1;
     ingredient2.textContent = data.drinks[0].strIngredient2;
     ingredient3.textContent = data.drinks[0].strIngredient3;
+    ingredient4.textContent = data.drinks[0].strIngredient4;
   });

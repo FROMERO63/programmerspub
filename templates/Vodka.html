@@ -61,7 +61,7 @@
             <div class="card large">
               <div class="card-image">
                 <figure class="image is-16by9">
-                  <img :src="card.image" alt="Image">
+                  <img id="img" alt="Image">
                 </figure>
               </div>
               <div class="card-content">
@@ -70,14 +70,159 @@
                     
                   </div>
                   <div class="media-content">
-                    <p class="title is-4 no-padding">{{card.user.title}}</p>
+                    <p  id="drinkName"  class="title is-4 no-padding">{{card.user.title}}</p>
                     <p>
                       <span class="title is-6">
                        
                   </div>
                 </div>
                 <div class="content">
-                  {{card.content}}
+                  <ol id="ingredient1_1"></ol>
+                  <ol id="meas1_1"></ol>
+                  <ol id="ingredient2_1"></ol>
+                  <ol id="meas2_1"></ol>
+                  <ol id="ingredient3_1"></ol>
+                  <ol id="meas3_1"></ol>
+                  <ol id="ingredient4_1"></ol>
+                  <ol id="meas4_1"></ol>
+                  <div class="background-icon"><span class="icon-twitter"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="section">
+        <div class="columns">
+          <div class="column has-text-centered">
+            
+          </div>
+        </div>
+        <div id="app" class="row columns is-multiline">
+          <div v-for="card in cardData" key="card.id" class="column is-4">
+            <div class="card large">
+              <div class="card-image">
+                <figure class="image is-16by9">
+                  <img id="img_2" alt="Image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    
+                  </div>
+                  <div class="media-content">
+                    <p  id="drinkName2"  class="title is-4 no-padding">{{card.user.title}}</p>
+                    <p>
+                      <span class="title is-6">
+                       
+                  </div>
+                </div>
+                <div class="content">
+                  <ol id="ingredient1_2"></ol>
+                  <ol id="meas1_2"></ol>
+                  <ol id="ingredient2_2"></ol>
+                  <ol id="meas2_2"></ol>
+                  <ol id="ingredient3_2"></ol>
+                  <ol id="meas3_2"></ol>
+                  <ol id="ingredient4_2"></ol>
+                  <ol id="meas4_2"></ol>
+                  <ol id="ingredient5_2"></ol>
+                  <ol id="meas5_2"></ol>
+                  <div class="background-icon"><span class="icon-twitter"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="section">
+        <div class="columns">
+          <div class="column has-text-centered">
+            
+          </div>
+        </div>
+        <div id="app" class="row columns is-multiline">
+          <div v-for="card in cardData" key="card.id" class="column is-4">
+            <div class="card large">
+              <div class="card-image">
+                <figure class="image is-16by9">
+                  <img id="img_3" alt="Image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    
+                  </div>
+                  <div class="media-content">
+                    <p  id="drinkName3"  class="title is-4 no-padding">{{card.user.title}}</p>
+                    <p>
+                      <span class="title is-6">
+                       
+                  </div>
+                </div>
+                <div class="content">
+                  <ol id="ingredient1_3"></ol>
+                  <ol id="meas1_3"></ol>
+                  <ol id="ingredient2_3"></ol>
+                  <ol id="meas2_3"></ol>
+                  <ol id="ingredient3_3"></ol>
+                  <ol id="meas3_3"></ol>
+                  <ol id="ingredient4_3"></ol>
+                  <ol id="meas4_3"></ol>
+                  <ol id="ingredient5_3"></ol>
+                  <ol id="meas5_3"></ol>
+                  <div class="background-icon"><span class="icon-twitter"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="section">
+        <div class="columns">
+          <div class="column has-text-centered">
+            
+          </div>
+        </div>
+        <div id="app" class="row columns is-multiline">
+          <div v-for="card in cardData" key="card.id" class="column is-4">
+            <div class="card large">
+              <div class="card-image">
+                <figure class="image is-16by9">
+                  <img id="img_4" alt="Image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    
+                  </div>
+                  <div class="media-content">
+                    <p  id="drinkName4"  class="title is-4 no-padding">{{card.user.title}}</p>
+                    <p>
+                      <span class="title is-6">
+                       
+                  </div>
+                </div>
+                <div class="content">
+                  <ol id="ingredient1_4"></ol>
+                  <ol id="meas1_4"></ol>
+                  <ol id="ingredient2_4"></ol>
+                  <ol id="meas2_4"></ol>
+                  <ol id="ingredient3_4"></ol>
+                  <ol id="meas3_4"></ol>
+                  <ol id="ingredient4_4"></ol>
+                  <ol id="meas4_4"></ol>
+                  <ol id="ingredient5_4"></ol>
+                  <ol id="meas5_4"></ol>
                   <div class="background-icon"><span class="icon-twitter"></span></div>
                 </div>
               </div>
@@ -96,19 +241,7 @@
         </div>
       </div>
     </footer>
-
-    <script src="../js/Vodka.js"></script>
-
-    <!-- Using Vue to populate cards to reduce redundant code -->
-    <script>
-      var app = new Vue({
-        el: '#app',
-        data: {
-          cardData: cardsData
-        }
-      })
-
-    </script>
+<script src="../vodka_page_script.js"></script>
   </body>
 
 </html>

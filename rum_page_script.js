@@ -1,5 +1,5 @@
 const urlRequest =
-  "https://www.thecocktaildb.com/api/json/v2/9973533/filter.php?i=gin";
+  "https://www.thecocktaildb.com/api/json/v2/9973533/filter.php?i=rum";
 
 fetch(urlRequest)
   .then(function (response) {
@@ -11,10 +11,10 @@ fetch(urlRequest)
     const nameCell = document.getElementById("drinkName");
     const img = document.getElementById("img");
 
-    nameCell.textContent = data.drinks[15].strDrink;
-    img.src = data.drinks[15].strDrinkThumb;
-    img.style.width = "333px";
-    img.style.height = "233px";
+    nameCell.textContent = data.drinks[20].strDrink;
+    img.src = data.drinks[20].strDrinkThumb;
+    img.style.width = "400px";
+    img.style.height = "200px";
     img.style.borderRadius = "10px";
     /*-------------------------------------------------------------*/
 
@@ -22,11 +22,11 @@ fetch(urlRequest)
 
     const img2 = document.getElementById("img_2");
 
-    namecell2.textContent = data.drinks[6].strDrink;
-    img2.src = data.drinks[6].strDrinkThumb;
-    img2.style.width = "333px";
-    img2.style.height = "233px";
-    img2.style.borderRadius = "10px";
+    namecell2.textContent = data.drinks[9].strDrink;
+    img2.src = data.drinks[9].strDrinkThumb;
+    img2.style.width = "400px";
+    img2.style.height = "200px";
+
     /*------------------------------------------------------------*/
     const namecell3 = document.getElementById("drinkName3");
 
@@ -34,23 +34,20 @@ fetch(urlRequest)
 
     namecell3.textContent = data.drinks[23].strDrink;
     img3.src = data.drinks[23].strDrinkThumb;
-    img3.style.width = "333px";
+    img3.style.width = "400px";
     img3.style.height = "233px";
-    img3.style.borderRadius = "10px";
 
     const namecell4 = document.getElementById("drinkName4");
 
     const img4 = document.getElementById("img_4");
 
-    namecell4.textContent = data.drinks[2].strDrink;
-    img4.src = data.drinks[2].strDrinkThumb;
-    img4.style.width = "333px";
+    namecell4.textContent = data.drinks[12].strDrink;
+    img4.src = data.drinks[12].strDrinkThumb;
+    img4.style.width = "400px";
     img4.style.height = "233px";
-    img4.style.borderRadius = "10px";
-    4;
   });
 const secUrlRequest =
-  "https://www.thecocktaildb.com/api/json/v2/1/lookup.php?i=11054";
+  "https://www.thecocktaildb.com/api/json/v2/1/lookup.php?i=14978";
 
 fetch(secUrlRequest)
   .then(function (response) {
@@ -62,6 +59,7 @@ fetch(secUrlRequest)
     const ingredient2 = document.getElementById("ingredient2_1");
     const ingredient3 = document.getElementById("ingredient3_1");
     const ingredient4 = document.getElementById("ingredient4_1");
+    const ingredient5 = document.getElementById("ingredient5_1");
 
     const meas1 = document.getElementById("meas1_1");
     const meas2 = document.getElementById("meas2_1");
@@ -79,10 +77,11 @@ fetch(secUrlRequest)
     ingredient2.textContent = data.drinks[0].strIngredient2;
     ingredient3.textContent = data.drinks[0].strIngredient3;
     ingredient4.textContent = data.drinks[0].strIngredient4;
+    ingredient5.textContent = data.drinks[0].strIngredient5;
   });
 /*----------------------------------------------*/
 const thirdUrlRequest =
-  "https://www.thecocktaildb.com/api/json/v2/1/lookup.php?i=17226";
+  "https://www.thecocktaildb.com/api/json/v2/1/lookup.php?i=178329";
 fetch(thirdUrlRequest)
   .then(function (response) {
     return response.json();
@@ -115,7 +114,7 @@ fetch(thirdUrlRequest)
     ingredient5.textContent = data.drinks[0].strIngredient5;
   });
 const fourthUrlRequest =
-  "https://www.thecocktaildb.com/api/json/v2/1/lookup.php?i=11124";
+  "https://www.thecocktaildb.com/api/json/v2/1/lookup.php?i=12856";
 fetch(fourthUrlRequest)
   .then(function (response) {
     return response.json();
@@ -148,7 +147,7 @@ fetch(fourthUrlRequest)
     ingredient5.textContent = data.drinks[0].strIngredient5;
   });
 const fifthUrlRequest =
-  "https://www.thecocktaildb.com/api/json/v2/1/lookup.php?i=17222";
+  "https://www.thecocktaildb.com/api/json/v2/1/lookup.php?i=178328";
 fetch(fifthUrlRequest)
   .then(function (response) {
     return response.json();
