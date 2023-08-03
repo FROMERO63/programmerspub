@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./assets/style.css" />
 </head>
 
-<body>
+<body  onload="loadthedata()">
 
     <header>
 
@@ -53,6 +53,30 @@
                 <a id="randomDrink" href="./assets/random.html">Would you like me to recomend a random drink? *click here*
                 </a>
             </div>
+        </section>
+        <section>
+            <div class="lidiWrap"> Please like your bartender if you are happy with service!
+                <button class="lidiUp" onclick="savelike()">Like
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <div class="likeCounter" id="likeOne"></div>
+                </button>
+                <button class="lidiDown" onclick="savedislike()">Dislike
+                    <i class="fa-regular fa-thumbs-down"></i>
+                    <div class="dislikeCounter" id="likeTwo"></div>
+                </button>
+                <div class="lidiWrap"> See how the bartender is doing!
+                    <button class="lidiUp">Like
+                        <i class="fa-regular fa-thumbs-up"></i>
+                        <div class="likeCounter" id="likeThree"></div>
+                    </button>
+                    <button class="lidiDown">Dislike
+                        <i class="fa-regular fa-thumbs-down"></i>
+                        <div class="dislikeCounter" id="likeFour"></div>
+                    </button>
+            </div>
+        </section>
+
+        <section>
             <div class="alcoholChoiceContainer">
                 <div class="title is-2" id="titleText">SELECT YOUR FAVORITE ALCOHOL BELOW
                     <p class="subtitle is-8" id="subtitleText">To see a list of specialty drinks containing that alcohol
@@ -150,4 +174,3 @@
 </body>
 
 </html>
-
